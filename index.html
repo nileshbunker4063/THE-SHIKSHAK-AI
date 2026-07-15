@@ -1,1 +1,97 @@
 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#1e40af" />
+    <meta
+      name="description"
+      content="Shikshak+ AI - Your Personal AI Teacher. Learn NCERT with AI, Voice, and Interactive Whiteboard."
+    />
+    <meta name="keywords" content="AI Teacher, Education, NCERT, Learning, EdTech, India" />
+    <meta property="og:title" content="Shikshak+ AI - Personal AI School" />
+    <meta property="og:description" content="Learn with AI Teacher powered by Claude" />
+    <meta property="og:image" content="https://via.placeholder.com/1200x630?text=Shikshak+AI" />
+    
+    <title>🎓 Shikshak+ AI - Your Personal AI Teacher</title>
+    
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+          'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+          sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+      }
+
+      #root {
+        width: 100%;
+        min-height: 100vh;
+      }
+
+      /* Loading screen */
+      .loading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .spinner {
+        border: 4px solid rgba(255, 255, 255, 0.3);
+        border-top: 4px solid white;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        animation: spin 1s linear infinite;
+        margin-right: 20px;
+      }
+
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>
+      <div style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        padding: 20px;
+      ">
+        <div>
+          <h1>🎓 Shikshak+ AI</h1>
+          <p>You need to enable JavaScript to run this app.</p>
+          <p>JavaScript enable करें अपने browser में।</p>
+        </div>
+      </div>
+    </noscript>
+    <div id="root">
+      <div class="loading">
+        <div class="spinner"></div>
+        <span>Loading Shikshak+ AI...</span>
+      </div>
+    </div>
+    <script src="/src/index.js"></script>
+  </body>
+</html>
